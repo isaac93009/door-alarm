@@ -1,6 +1,12 @@
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(input.magneticForce(Dimension.Strength))
 })
+input.onButtonPressed(Button.AB, function () {
+    music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
+})
+input.onButtonPressed(Button.B, function () {
+    music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
+})
 basic.showString("Connecting to isaac tabliet")
 basic.showString("...")
 basic.showString("...")
